@@ -1,0 +1,15 @@
+:root{
+    --color-primary: #020202db;
+    --color-secundary: #9E9E9E;
+    
+    
+    --color-htmlgrey-light:#e4e1e178;
+    --color-white-light: rgb(255, 255, 255);
+    --color-grey-light: #9E9E9E;
+
+    /*colores extras*/
+    --color-grey: rgba(24, 144, 255, 0.2);
+  --color-green-light: #c5d86d;
+  --color-pink-light: #ffeddf;
+  --color-white: rgb(255, 255, 255);
+}
