@@ -37,3 +37,7 @@
   }
 }
 
+.MuiAppBar-colorSecondary {
+  color: #4fce0e !important;
+  background-color: #5f41a7 !important;
+}
