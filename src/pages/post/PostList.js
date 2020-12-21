@@ -1,5 +1,5 @@
 import React from "react";
-import {List,Datagrid,TextField,ReferenceField,EditButton}from "react-admin";
+import {List,Datagrid,TextField,ReferenceField,EditButton,DeleteButton,ShowButton}from "react-admin";
 import {Filter,ReferenceInput,SelectInput,TextInput}from "react-admin"
 import { PostShow } from "..";
 
@@ -7,8 +7,8 @@ import { PostShow } from "..";
 const PostFilter= (props) =>(
  
  <Filter {...props} >
-       <TextInput label="Search" source="q" alwaysOn/>
-       <ReferenceInput label="User"  source="userId" reference="users" allowEmpty>
+       <TextInput label="Buscar" source="q" alwaysOn/>
+       <ReferenceInput label="Usuario"  source="userId" reference="users" alwaysOn>
            <SelectInput optionText="name"/>
        </ReferenceInput>
 
@@ -22,13 +22,14 @@ const PostFilter= (props) =>(
     <List filters={<PostFilter/>} exporter={false} {...props}>
         <Datagrid>
             <TextField source="id" />
+            <ShowButton label="Ver"/>                                       
 
             <ReferenceField source="userId" reference="users">
             
                 <TextField source="name" />
             </ReferenceField>
             <TextField source="title" />
-            <EditButton/>                                       
+            <EditButton/>
         </Datagrid>
     </List>
 );

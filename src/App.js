@@ -15,8 +15,8 @@ const App = ()=>
   
 <Resource name="users" list={UserList} icon={UserIcon}/>
   <Resource name="posts"  list={PostList} show ={PostShow} edit={PostEdit} create={PostCreate} icon={PostIcon}/>
-  <Resource name ="examen"/>
-  <Resource name ="foro"/>
+  <Resource name ="examen" list={ ListGuesser} icon={UserIcon}/>
+  <Resource name ="foro" list={ ListGuesser} icon={UserIcon}/>
 </Admin>
   
 
