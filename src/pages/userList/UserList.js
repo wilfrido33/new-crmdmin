@@ -7,13 +7,14 @@ import {List,Datagrid,TextField,EmailField, UrlField,ShowButton}from "react-admi
         <Datagrid rowClick="edit">
             <TextField source="id" />
             <ShowButton label="Ver"/>
-            <TextField source="name" />
 
-            <EmailField source="email" />
+            <TextField label="Nombre" source="name" />
+
+            <EmailField  label="Correo"  source="email" />
             
-            <TextField source="phone" />
-            <UrlField source="website" />
-            <TextField source="company.name" />
+            <TextField label="Telefono" source="phone" />
+        
+        
         </Datagrid>
     </List>
 );

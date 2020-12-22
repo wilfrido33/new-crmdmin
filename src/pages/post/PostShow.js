@@ -3,7 +3,7 @@ import { Show,SimpleShowLayout,TextField,RichTextField,DateField } from "react-a
 
 
 const PostShow = props =>(
-<Show {...props}>
+<Show {...props} >
 <SimpleShowLayout>
 
 <TextField source="title" />
